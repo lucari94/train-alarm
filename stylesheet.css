@@ -1,0 +1,237 @@
+#date-label {
+    top: -1rem;
+    font-size: .8rem;
+}
+#headerRow {
+    display: flex;
+    justify-content: center;
+    background-color: #283640;
+}
+#form-container {
+    /*width: 70%;*/
+    height: 200px;
+    margin-top: 100px;
+    /*display: flex;*/
+    align-items: center;
+}
+
+.input {
+    border-bottom: 1px solid white;
+}
+#submit {
+    text-align: center;
+}
+
+
+#countdownContainer {
+    width: 100%;
+    display: none;
+    justify-content: center;
+
+}
+
+#list-row {
+    margin-top: 80px;
+}
+
+#form {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+
+}
+
+.input-field {
+    font-family: 'Montserrat';
+    letter-spacing: 1px;
+    font-size: 24px;
+    color: white;
+    margin-right: 5%;
+    margin-left: 5%;
+}
+
+.card-content {
+    color: #37474f;
+}
+
+.card .card-title  {
+    color: #283640;
+    font-size: 32px;
+    letter-spacing: 2px; 
+    font-weight: 500;
+}
+
+.listButton {
+    position: relative;
+    top: 10px;
+    left: 0px;
+}
+
+#secondForm {
+    margin-bottom: 30px;
+ }
+
+#title {
+    font-family: 'Mr Dafoe', cursive;
+    font-size: 48px;
+    color: #455a64;
+}
+
+h5 {
+    color: #455a64;
+}
+
+h6 {
+    font-size: 18px;
+}
+
+#ritardo {
+    font-size: 24px;
+}
+
+#frase {
+    font-size: 16px;
+}
+
+.singleTrainLi {
+    line-height: 3;
+}
+
+#startStation  {
+    font-size: 24px;
+}
+
+#trainDate {
+    font-size: 24px;
+}
+
+.select-wrapper span.caret {
+    color: white;
+}
+
+.select-wrapper input.select-dropdown {
+    font-size: 24px;
+}
+
+.white {
+    background-color: #cfd8dc !important;
+}
+
+.card .card-action:last-child {
+    padding-left: 0;
+}
+
+ul {
+  margin: 0;
+  display: block;
+}
+
+ul li {
+  transition: background-color .3s;
+  float: left;
+  padding: 0;
+}
+
+
+.countdown li {
+    display: inline-block;
+    text-align: center;
+    min-width: 110px;
+}
+
+.list-inline>li {
+    padding-right: 5px;
+    padding-left: 5px;
+}
+.countdown li span {
+    font-size: 72px;
+    line-height: 50px;
+    font-weight: 900;
+    color: #455a64;
+}
+
+.countdown li p {
+    font-size: 22px;
+    line-height: 50px;
+    font-weight: 900;
+}
+.text-center{
+    text-align: center !important;
+}
+
+#countDownTitle {
+    font-family: 'Montserrat';
+    font-size: 36px;
+}
+
+h3 {
+    font-size: 36px;
+}
+
+#demo {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+#inputDestinazione {
+    width: 50%;
+    margin: 0 auto;
+}
+#labelDestinazione {
+    text-align: center;
+}
+
+.spacing {
+    margin-top: 50px;
+}
+
+#destination {
+    color: #455a64;
+}
+
+
+input:-webkit-autofill {
+    background-color: none;
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) { 
+    .card .card-title {
+        font-size: 20px;
+    }
+    .card {
+        height: 340px;
+    }
+    #form-container {
+    height: 400px;
+    margin-top: 150px;
+    }
+}
+@media only screen and (min-width : 481px) and (max-width : 768px) {
+    #form-container {
+    /*width: 70%;*/
+    height: 350px;
+    margin-top: 60px;
+    }
+
+}
+@media only screen and (min-width : 320px) and (max-width : 480px) {
+    #form-container {
+    /*width: 70%;*/
+    height: 350px;
+    margin-top: 60px;
+    }
+
+    .countdown li p {
+    font-size: 16px;
+    line-height: 20px;
+}
+.countdown li span {
+    font-size: 32px;
+}
+
+#countDownTitle {
+    font-size: 20px;
+}
+
+}

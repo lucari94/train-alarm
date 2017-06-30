@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Mr+Dafoe" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+</head>
+
+<body>
+    <!--DA QUI INIZIA MATERIAL-->
+        <div class="col s12">
+       <nav class="white" role="navigation">
+            <div class="nav-wrapper container">
+                <span id="title">Pendular</span>
+            </div>
+       </nav>
+    
+    <div class="bho">
+    <div class="col s12 center">
+        <div class="row" id="headerRow">
+            <div id="form-container" class="container">
+                <div class="input-field col s12 m3 l3">
+                    <input class="input inputText validate" placeholder="Inserisci la stazione di partenza" id="startStation" type="text"
+                        value="seregno">
+                    <label for="startStation">Stazione</label>
+                </div>
+                <div class="input-field col s12 m5 l5">
+                    <input class="input inputText" placeholder="dd/mm/yyyy hh:mm" id="trainDate" type="datetime-local" value="2017-06-30T18:00">
+                    <label for="trainDate" id="date-label">Data</label>
+                </div>
+                <div class="input-field col s12 m2 l2">
+                    <select class="inputText" id="timeBefore">
+                            <option value="30">0:30 h.</option>
+                            <option value="60">1:00 h.</option>
+                            <option value="90">1:30 h.</option>
+                            <option value="120">2:00 h.</option>
+                            <option value="150">2:30 h.</option>
+                            <option value="180">3:00 h.</option>
+                        </select>
+                    <label for=>Tempo prima?</label>
+                </div>
+                <div class="row">
+                </div class="col s2">
+                <button class="btn waves-effect waves-light" id="submit">Cerca</button>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+
+    <div class="row">
+        <div class="col s12" id="list-container">
+        </div>
+    </div>
+
+    <div class="center" id="countdownContainer">
+        <div id="secondForm">
+            <div id="demo"></div>
+                <div class="row spacing">
+                    <div id="onboarding" class="col s12"><h5>Continua a dormire anche a bordo, ti sveglieremo a destinazione!</h5></div>
+                    </div>
+                <div class="input-field" id="inputDestinazione">
+            <input id="destination" type="text" class="validate">
+            <label  id="labelDestinazione" for="destination">Stazione di arrivo</label>
+                </div>
+            <button class="btn waves-effect waves-light" id="onBoard">Sleep</button>
+        </div>
+    </div>
+    <audio id=myAlarm><source src='Old-alarm-clock-ringing.mp3'></audio>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous"></script>
+    <script src="./plugins/moment.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
+    <script src="materialize.js"></script>
+    <script src="app.js"></script>
+    <script src="countdown.js"></script>
+</body>
+
+
+</html>
